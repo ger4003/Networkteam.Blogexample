@@ -1,0 +1,20 @@
+{
+	"name": "networkteam/blogexample",
+	"type": "typo3-flow-package",
+	"description": "The networkteam Blog package to show some examples for using Flow",
+	"authors": [
+		{
+			"name": "networkteam GmbH",
+			"email": "typo3@networkteam.com"
+		}
+	],
+	"require": {
+		"typo3/flow": "*",
+		"typo3/media": "@dev"
+	},
+	"autoload": {
+		"psr-0": {
+			"Networkteam\\Blogexample": "Classes"
+		}
+	}
+}

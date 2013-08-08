@@ -1,0 +1,34 @@
+{namespace m=TYPO3\Media\ViewHelpers}
+
+<f:layout name="Default" />
+
+<f:section name="Title">Custom view of Article controller</f:section>
+
+<f:section name="Content">
+	<h1>List of articles</h1>
+	<p>Some data set by the controller:</p>
+	<ul>
+		<f:for each="{articles}" as="article">
+			<li>
+				<dl>
+					<dt>Title:</dt>
+					<dd>{article.title}</dd>
+
+					<dt>Date:</dt>
+					<dd><f:format.date format="d.m.Y - H:i:s">{article.date}</f:format.date></dd>
+
+					<dt>Author:</dt>
+					<dd>{article.author}</dd>
+
+					<dt>Content:</dt>
+					<dd>{article.content}</dd>
+
+					<f:if condition="{article.image}">
+						<dt>Image:</dt>
+						<dd><m:image image="{article.image}" maximumWidth="150" alt="{article.image.title}" /></dd>
+					</f:if>
+				</dl>
+			</li>
+		</f:for>
+	</ul>
+</f:section>
