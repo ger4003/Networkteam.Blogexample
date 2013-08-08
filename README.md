@@ -13,7 +13,9 @@ Install the package via composer by adding the following code to your composer.j
 			"type": "git",
 			"url": "https://github.com/networkteam/Networkteam.Blogexample.git"
 		},
+		...
 	],
 	"require": {
+		...,
 		"networkteam/blogexample": "dev-master"
 	}
