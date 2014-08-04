@@ -6,6 +6,8 @@ A simple Blog example for showing some Flow features.
 Installation
 ------------
 
+Test
+
 Install the package via composer by adding the following code to your composer.json:
 
 	"repositories": [
